@@ -44,6 +44,15 @@ def Vienads():
     return 0 
 
 
+def Clear():
+    E.delete(0, END)
+    num1 = 0
+    num2 = 0
+    mathOp =" "
+    return 0 
+   
+
+
 
 
 btn0 = Button(manslogs, text="0", padx="40", pady="20", bd= 3, command=lambda:btnClick(0))
@@ -64,7 +73,7 @@ btnTim = Button(manslogs, text= '*', padx="40", pady="20", bd= 3, command=lambda
 btnDiv = Button(manslogs, text= '/', padx="40", pady="20", bd= 3, command=lambda:btnCommand("/"))
 btnEquel = Button(manslogs, text= '=', padx="40", pady="20", bd= 3, command=Vienads)
 btnCom = Button(manslogs, text= '.', padx="40", pady="20", bd= 3)
-btnClear = Button(manslogs, text= 'c', padx="40", pady="20", bd= 3)
+btnClear = Button(manslogs, text= 'c', padx="40", pady="20", bd= 3, command=Clear)
 btnMinFy = Button(manslogs, text= '-( )', padx="40", pady="20", bd= 3)
 btnWallL = Button(manslogs, text= '(', padx="40", pady="20", bd= 3)
 btnWallR = Button(manslogs, text= ')', padx="40", pady="20", bd= 3)

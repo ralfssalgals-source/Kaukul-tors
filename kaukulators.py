@@ -29,7 +29,7 @@ def Vienads(): # šeit ir  + - * /  funkcija
     global num2
     num2=(float(E.get()))
     result=0
-    if mathOp=="+":
+    if mathOp=="+": # ja ir viena no opcijām tad maina rezultātu
         result=num1 + num2
     elif mathOp=="-":
         result=num1 - num2
@@ -57,7 +57,7 @@ def kvad(): # kvadrāts = paaugstina num1 kvadrātā
     global operator
     global num1
     global mathOp
-    num1 = (float(E.get())**2)
+    num1 = (float(E.get())**2) # kvadrātā
     E.delete(0, END)
     E.insert(0, num1)
     return 0 
@@ -68,7 +68,7 @@ def kvadratSk(): # atrod kvadrātsakni num1
     global num1
     global mathOp
     num1 = (float(E.get()))
-    num1 = sqrt(num1)
+    num1 = sqrt(num1) # kvadrātsakne
     E.delete(0, END)
     E.insert(0, num1)
     return 0 
@@ -78,7 +78,7 @@ def PlusMin(): # reizina num1 ar -1 . Izskatās -/+
     global operator
     global num1
     global mathOp
-    num1 = -(float(E.get()))
+    num1 = -(float(E.get())) # reiz -
     E.delete(0, END)
     E.insert(0, num1)
     return 0 
@@ -89,7 +89,7 @@ def logy(): # funkcija logoritmam
     global mathOp
     global num1
     num1 = (float(E.get()))
-    num1=log(num1)
+    num1=log(num1) # logaritms
     E.delete(0, END)
     E.insert(0, str(num1))
     return 0
